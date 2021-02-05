@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="p-5">
+       <div class="card">
+               <div class="card-body">
+    
+                    <%= form_for @link, remote: true do |form| %>
+                    <h5>Cognizant URL Shortener</h4>
+                    <%= form.text_field :original_url, class: "form-control", placeholder: "Enter a URL to shorten" %>
+                    <%= form.submit "Let's Go!", class: "btn btn-primary mt-4" %>
+
+                    <% end %>
+            </div>  
+            <div id="short-link"></div>
+        </div>  
+    </div>    
+</div>
+
+
+
